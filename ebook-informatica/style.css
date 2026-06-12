@@ -8,13 +8,13 @@
 /* === CSS VARIABLES === */
 :root {
   --bg: #050510;
-  --bg-card: rgba(255,255,255,0.06);
-  --bg-card-hover: rgba(255,255,255,0.11);
-  --border: rgba(255,255,255,0.16);
-  --border-cyan: rgba(0,212,255,0.48);
-  --border-purple: rgba(168,85,247,0.48);
-  --border-green: rgba(74,222,128,0.48);
-  --border-gold: rgba(251,191,36,0.48);
+  --bg-card: rgba(255,255,255,0.10);
+  --bg-card-hover: rgba(255,255,255,0.16);
+  --border: rgba(255,255,255,0.26);
+  --border-cyan: rgba(0,212,255,0.55);
+  --border-purple: rgba(168,85,247,0.55);
+  --border-green: rgba(74,222,128,0.55);
+  --border-gold: rgba(251,191,36,0.55);
 
   --cyan: #00d4ff;
   --purple: #a855f7;
@@ -23,8 +23,8 @@
   --red: #f87171;
 
   --text: #ffffff;
-  --text-muted: #94a3b8;
-  --text-faint: #64748b;
+  --text-muted: #bac8d8;
+  --text-faint: #94a3b8;
 
   --grad-brand: linear-gradient(135deg, #00d4ff, #a855f7);
   --grad-green: linear-gradient(135deg, #4ade80, #22c55e);
@@ -322,7 +322,7 @@ body::before {
 
 /* === STATS BAR === */
 .stats-bar {
-  background: rgba(255,255,255,0.018);
+  background: rgba(255,255,255,0.06);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 32px 0;
@@ -532,7 +532,7 @@ section { padding: 68px 0; position: relative; }
   align-items: flex-start;
   gap: 12px;
   padding: 14px 18px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.09);
   border: 1px solid var(--border);
   border-radius: var(--r-sm);
   font-size: 15px;
@@ -754,7 +754,7 @@ section { padding: 68px 0; position: relative; }
 .guar-card {
   max-width: 580px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.09);
   border: 1px solid rgba(251,191,36,0.38);
   border-radius: var(--r-xl);
   padding: 40px 28px;
