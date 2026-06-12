@@ -2,20 +2,20 @@
 
 :root {
   --bg: #050510;
-  --bg-card: rgba(255,255,255,0.06);
-  --bg-card-hover: rgba(255,255,255,0.11);
-  --border: rgba(255,255,255,0.16);
-  --border-cyan: rgba(0,212,255,0.48);
-  --border-purple: rgba(168,85,247,0.48);
-  --border-green: rgba(74,222,128,0.48);
-  --border-gold: rgba(251,191,36,0.48);
+  --bg-card: rgba(255,255,255,0.10);
+  --bg-card-hover: rgba(255,255,255,0.16);
+  --border: rgba(255,255,255,0.26);
+  --border-cyan: rgba(0,212,255,0.55);
+  --border-purple: rgba(168,85,247,0.55);
+  --border-green: rgba(74,222,128,0.55);
+  --border-gold: rgba(251,191,36,0.55);
   --cyan: #00d4ff;
   --purple: #a855f7;
   --green: #4ade80;
   --gold: #fbbf24;
   --text: #ffffff;
-  --text-muted: #94a3b8;
-  --text-faint: #64748b;
+  --text-muted: #bac8d8;
+  --text-faint: #94a3b8;
   --grad-brand: linear-gradient(135deg, #00d4ff, #a855f7);
   --grad-green: linear-gradient(135deg, #4ade80, #22c55e);
   --glow-cyan: 0 0 30px rgba(0,212,255,0.25);
