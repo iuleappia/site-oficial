@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../../../js/analytics.js"></script>
+<script src="../../../js/meta-pixel.js"></script>
+
+<title>Oferta especial: Informática Avanzada por US$14.90 | IuleApp</title>
+<meta name="description" content="Oferta exclusiva para clientes del Ebook de Informática Completo: agrega Informática Avanzada (250+ páginas, 14 capítulos y bonus) por solo US$14.90.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d1117">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../es.css">
+
+<style>
+  /* ---------- extras exclusivos da página de upsell ---------- */
+  .announce.alert { background: var(--accent); color: #fff; border-bottom: 0; font-weight: 600; }
+
+  .steps {
+    list-style: none; margin: 0; padding: 14px var(--gutter);
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 22px;
+    background: var(--ink); border-bottom: 1px solid var(--ink-line);
+    font-size: 0.82rem; color: var(--on-dark-muted);
+  }
+  .steps li { display: flex; align-items: center; gap: 8px; }
+  .steps .n {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid var(--ink-line); font-weight: 600; font-size: 0.75rem;
+  }
+  .steps .done { color: var(--on-dark); }
+  .steps .done .n { background: #1f9d55; border-color: #1f9d55; color: #fff; }
+  .steps .now { color: var(--on-dark); font-weight: 600; }
+  .steps .now .n { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .header-tag { font-size: 0.85rem; color: var(--on-dark-muted); }
+
+  .hero-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 28px; }
+  .hero-price .old { color: var(--on-dark-muted); text-decoration: line-through; }
+  .hero-price .new { font-family: var(--font-head); font-weight: 700; font-size: 2.2rem; letter-spacing: -0.02em; color: #fff; }
+  .badge {
+    display: inline-block; background: var(--accent-soft); color: #8fb0ff;
+    border: 1px solid rgba(47,107,255,0.35); border-radius: 999px;
+    padding: 3px 12px; font-size: 0.8rem; font-weight: 600;
+  }
+
+  /* capa: usa a imagem; se ela não existir, mostra a capa em CSS */
+  .cover-fallback {
+    display: none; width: min(62%, 240px); aspect-ratio: 3 / 4; border-radius: 6px 12px 12px 6px;
+    background: linear-gradient(160deg, #1b2a6b 0%, #0f1733 70%);
+    border-left: 8px solid #2f5fd0; box-shadow: 0 30px 40px rgba(0,0,0,0.45);
+    padding: 28px 22px; flex-direction: column; justify-content: space-between; color: #fff;
+  }
+  .cover-fallback small { font-size: 0.7rem; letter-spacing: .12em; text-transform: uppercase; color: #8fb0ff; }
+  .cover-fallback strong { font-family: var(--font-head); font-size: 1.9rem; line-height: 1.05; }
+  .cover-fallback span { font-size: 0.8rem; color: #c6d3ff; }
+  .hero-media.no-img img { display: none; }
+  .hero-media.no-img .cover-fallback { display: flex; }
+
+  .bonus { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .bonus li {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 20px; display: grid; grid-template-columns: 40px 1fr; column-gap: 12px;
+  }
+  .bonus .tag { grid-row: span 2; font-family: var(--font-head); font-weight: 600; color: var(--accent); }
+  .bonus h3 { margin-bottom: 4px; }
+  .bonus p { color: var(--muted); font-size: 0.95rem; }
+
+  .compare { display: grid; gap: 16px; }
+  .compare > div { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; background: var(--surface); }
+  .compare > div.hl { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .compare h3 { margin-bottom: 12px; }
+  .compare .label { font-size: 0.78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .compare .hl .label { color: var(--accent); }
+
+  .price-rows { margin-bottom: 18px; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+  .price-rows p { display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--muted); padding: 3px 0; }
+  .price-rows s { color: var(--muted); }
+  .price-save { display: inline-block; background: #e8f6ee; color: #157347; font-weight: 600; font-size: 0.85rem; border-radius: 999px; padding: 4px 12px; margin-bottom: 18px; }
+  .price-label { font-size: 0.8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  .widget-box { margin-top: 8px; min-height: 90px; }
+  .one-time { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 14px; }
+
+  @media (min-width: 640px) {
+    .bonus { grid-template-columns: 1fr 1fr; }
+    .compare { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 900px) {
+    .bonus { grid-template-columns: repeat(3, 1fr); }
+    .hero-media.no-img .cover-fallback { width: 100%; max-width: 360px; }
+  }
+</style>
+</head>
+<body>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=710238658220954&ev=PageView&noscript=1"></noscript>
+
+<!-- Ícones (traço fino, estilo Lucide) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+</svg>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce alert">
+  ¡Espera! Tu pedido aún no está completo <span class="dot">·</span> Esta oferta aparece una sola vez
+</div>
+
+<!-- PASSOS DO PEDIDO -->
+<ol class="steps">
+  <li class="done"><span class="n">✓</span> Compra confirmada</li>
+  <li class="now"><span class="n">2</span> Oferta especial</li>
+  <li><span class="n">3</span> Acceso a tu ebook</li>
+</ol>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap header-inner">
+    <span class="logo">Iule<span>App</span></span>
+    <span class="header-tag">Oferta exclusiva para clientes</span>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero dark">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Solo para quien compró el Ebook de Informática Completo</p>
+      <h1>Ya tienes lo básico. Ahora da el siguiente paso.</h1>
+      <p class="lead">Agrega <strong style="color:#fff">Informática Avanzada</strong> a tu pedido: más de 250 páginas para resolver tú mismo lo que hoy le pagas a un técnico. Se agrega con un solo clic, sin volver a ingresar tus datos de pago.</p>
+
+      <div class="hero-price">
+        <span class="old">US$37</span>
+        <span class="new">US$14.90</span>
+        <span class="badge">Solo en esta página</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#oferta" class="btn btn-primary btn-lg">
+          Ver la oferta especial
+          <svg class="i" aria-hidden="true"><use href="#i-down"/></svg>
+        </a>
+      </div>
+
+      <ul class="trust">
+        <li><svg class="i" aria-hidden="true"><use href="#i-zap"/></svg> Compra con 1 clic</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg> Garantía de 7 días</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> Pago seguro con Hotmart</li>
+      </ul>
+    </div>
+
+    <div class="hero-media" id="heroMedia">
+      <img src="img/mockup-avanzada.png" width="512" height="512" alt="Ebook Informática Avanzada" fetchpriority="high"
+           onerror="document.getElementById('heroMedia').classList.add('no-img')">
+      <div class="cover-fallback" aria-hidden="true">
+        <small>Iule Torres · IuleApp</small>
+        <div>
+          <strong>Informática Avanzada</strong><br>
+          <span>Lo que viene después de lo básico</span>
+        </div>
+        <span>250+ páginas · 14 capítulos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FACTS ========== -->
+<section class="facts">
+  <div class="wrap facts-grid">
+    <div><strong>250+</strong><span>páginas de contenido</span></div>
+    <div><strong>14</strong><span>capítulos prácticos</span></div>
+    <div><strong>6</strong><span>bonus incluidos</span></div>
+    <div><strong>57</strong><span>consejos de técnico</span></div>
+  </div>
+</section>
+
+<!-- ========== PROBLEM ========== -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2>Lo básico te enseña cómo funciona. Lo avanzado te enseña a resolverlo.</h2>
+      <p class="lead">Con el Ebook Completo ya entiendes la computadora. Ahora es momento de dejar de depender de otros.</p>
+    </div>
+    <ul class="pain-list">
+      <li><strong>Tu PC está lenta y no sabes por qué.</strong> Aprende a mantenerla, optimizarla y saber cuándo vale la pena mejorarla.</li>
+      <li><strong>Le pagas al técnico por cosas simples.</strong> Formatear, instalar Windows o resolver un error son cosas que puedes hacer tú mismo.</li>
+      <li><strong>Te da miedo perder tus archivos.</strong> Aprende a hacer respaldos de verdad y a recuperar datos cuando algo sale mal.</li>
+      <li><strong>Sientes que la tecnología avanza sin ti.</strong> Inteligencia artificial, nube, Linux y redes: domina lo que se usa hoy.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== CONTENT ========== -->
+<section class="section surface" id="contenido">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Lo que vas a aprender</h2>
+      <p class="lead">14 capítulos que continúan exactamente donde termina el Ebook de Informática Completo.</p>
+    </div>
+
+    <ol class="chapters">
+      <li><span class="num">01</span><h3>Windows a fondo</h3><p>Configuraciones ocultas, atajos y herramientas que pocos conocen.</p></li>
+      <li><span class="num">02</span><h3>La línea de comandos sin miedo</h3><p>CMD y PowerShell explicados paso a paso, con comandos útiles.</p></li>
+      <li><span class="num">03</span><h3>Mantenimiento y optimización</h3><p>Deja tu PC más rápida y evita problemas antes de que aparezcan.</p></li>
+      <li><span class="num">04</span><h3>Solución de problemas</h3><p>Un método paso a paso para diagnosticar y resolver fallas.</p></li>
+      <li><span class="num">05</span><h3>Formatear e instalar Windows</h3><p>Desde cero, con seguridad y sin perder tus archivos.</p></li>
+      <li><span class="num">06</span><h3>Mejora y armado de PC</h3><p>Qué cambiar, qué comprar y cómo armar tu propia computadora.</p></li>
+      <li><span class="num">07</span><h3>Tu red en casa y en la oficina</h3><p>Router, Wi-Fi, cables y cómo resolver problemas de conexión.</p></li>
+      <li><span class="num">08</span><h3>Respaldo y recuperación de datos</h3><p>Protege tus archivos y recupéralos cuando algo sale mal.</p></li>
+      <li><span class="num">09</span><h3>Privacidad y protección avanzada</h3><p>Contraseñas, estafas, virus y cómo blindar tus cuentas.</p></li>
+      <li><span class="num">10</span><h3>La nube y la sincronización</h3><p>Google Drive, OneDrive y cómo tener tus archivos en todas partes.</p></li>
+      <li><span class="num">11</span><h3>Productividad avanzada</h3><p>Trucos, organización, concentración y gestión del tiempo.</p></li>
+      <li><span class="num">12</span><h3>Inteligencia artificial en el día a día</h3><p>Usa la IA para estudiar, trabajar y ahorrar tiempo.</p></li>
+      <li><span class="num">13</span><h3>Primeros pasos en Linux</h3><p>Conoce, instala y usa Linux sin complicaciones.</p></li>
+      <li><span class="num">14</span><h3>Celular y computadora juntos</h3><p>Conecta, sincroniza y transfiere todo entre tus dispositivos.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== BONUS ========== -->
+<section class="section" id="bonus">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Y además, 6 bonus incluidos</h2>
+      <p class="lead">Material de consulta rápida para tener siempre a mano, sin pagar nada extra.</p>
+    </div>
+
+    <ul class="bonus">
+      <li><span class="tag">B1</span><h3>Checklist de mantenimiento</h3><p>Lo que debes revisar cada semana, mes y año.</p></li>
+      <li><span class="tag">B2</span><h3>Checklist de seguridad</h3><p>Los puntos esenciales para proteger tus cuentas y datos.</p></li>
+      <li><span class="tag">B3</span><h3>Tabla de atajos</h3><p>Los atajos de teclado más útiles en una sola página.</p></li>
+      <li><span class="tag">B4</span><h3>Guía rápida de problemas</h3><p>Síntoma, causa probable y solución, en formato de consulta.</p></li>
+      <li><span class="tag">B5</span><h3>Guía rápida de comandos</h3><p>Los comandos más usados de CMD y PowerShell.</p></li>
+      <li><span class="tag">B6</span><h3>Glosario de 40 términos</h3><p>Las palabras técnicas explicadas en lenguaje simple.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== COMPARATIVO ========== -->
+<section class="section surface">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Los dos ebooks se complementan</h2>
+      <p class="lead">Uno te da la base. El otro te convierte en la persona que resuelve los problemas de la computadora.</p>
+    </div>
+    <div class="compare">
+      <div>
+        <p class="label">Ya lo tienes</p>
+        <h3>Ebook de Informática Completo</h3>
+        <ul class="checklist">
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Conceptos y fundamentos</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Hardware, software y redes</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Paquete Office e internet</li>
+        </ul>
+      </div>
+      <div class="hl">
+        <p class="label">Agrégalo ahora</p>
+        <h3>Informática Avanzada</h3>
+        <ul class="checklist">
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Mantenimiento, formateo y solución de problemas</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Redes, respaldo, nube y seguridad</li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Inteligencia artificial, Linux y productividad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OFFER ========== -->
+<section class="section dark offer-sec" id="oferta">
+  <div class="wrap offer-grid">
+    <div class="offer-info">
+      <h2>Agrega Informática Avanzada a tu pedido.</h2>
+      <p class="lead">Con un solo clic, usando el mismo medio de pago de tu compra. Sin llenar nada de nuevo.</p>
+      <ul class="checklist on-dark">
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Más de 250 páginas en 14 capítulos</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> 6 bonus de consulta rápida</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> 57 consejos de técnico a lo largo del libro</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Explicaciones paso a paso, sin tecnicismos</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Para leer en celular, tablet y PC</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Acceso inmediato después de confirmar</li>
+      </ul>
+    </div>
+
+    <div class="price-card">
+      <p class="price-title">Informática Avanzada</p>
+      <div class="price-rows">
+        <p><span>Precio normal</span><s>US$37</s></p>
+        <p><span>Precio en la tienda</span><s>US$19.90</s></p>
+      </div>
+      <p class="price-label">Solo en esta página</p>
+      <p class="price"><span>US$</span>14.90</p>
+      <span class="price-save">Ahorras US$22.10 (60% de descuento)</span>
+      <p class="price-note">Pago único · Sin mensualidad · Acceso inmediato</p>
+
+      <!-- HOTMART - Sales Funnel Widget -->
+      <!--- sales funnel container --->
+      <div class="widget-box">
+        <div id="hotmart-sales-funnel"></div>
+      </div>
+      <!-- HOTMART - Sales Funnel Widget -->
+
+      <p class="one-time">Si sales de esta página, esta oferta no volverá a aparecer.</p>
+      <p class="price-secure"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> Pago 100% seguro con Hotmart</p>
+      <div class="price-guarantee">
+        <svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>
+        <p><strong>Garantía de 7 días.</strong> Si no te gusta, te devolvemos el 100%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GUARANTEE ========== -->
+<section class="section">
+  <div class="wrap guarantee">
+    <div class="guarantee-icon"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></div>
+    <div>
+      <h2>Garantía de 7 días, sin riesgos.</h2>
+      <p>Tienes 7 días para acceder al ebook y comprobar la calidad del contenido. Si el material no cumple tus expectativas por cualquier motivo, solicitas el reembolso total dentro del plazo, sin trámites y sin preguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section surface" id="faq">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2>Preguntas frecuentes</h2>
+      <p class="lead">Lo que necesitas saber antes de decidir.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>¿Cómo funciona la compra con un clic?</summary>
+        <p>Como acabas de comprar en Hotmart, tu medio de pago ya está registrado. Al hacer clic en el botón de compra, Informática Avanzada se agrega a tu pedido sin que tengas que ingresar tus datos de nuevo.</p>
+      </details>
+      <details>
+        <summary>¿Por qué el precio es más bajo aquí?</summary>
+        <p>Es un beneficio exclusivo para quien acaba de comprar el Ebook de Informática Completo. En la tienda, Informática Avanzada cuesta US$19.90. Este precio de US$14.90 solo está disponible en esta página.</p>
+      </details>
+      <details>
+        <summary>¿Repite el contenido del Ebook Completo?</summary>
+        <p>No. Informática Avanzada comienza donde termina el Ebook Completo. Mientras el primero explica los fundamentos, este se enfoca en la práctica: mantener, reparar, proteger y aprovechar al máximo tu computadora.</p>
+      </details>
+      <details>
+        <summary>¿Cómo recibiré el producto?</summary>
+        <p>Después de confirmar el pago, recibirás un correo electrónico de Hotmart con las instrucciones de acceso. El acceso es inmediato, igual que con el ebook que acabas de comprar.</p>
+      </details>
+      <details>
+        <summary>¿Puedo leerlo en el celular o tablet?</summary>
+        <p>Sí. El ebook es compatible con celular, tablet y computadora. También puedes imprimirlo para uso personal.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si no lo quiero?</summary>
+        <p>No pasa nada. Haz clic en el botón para rechazar la oferta y continúas normalmente. Tu compra del Ebook de Informática Completo ya está confirmada y no cambia.</p>
+      </details>
+      <details>
+        <summary>¿Cómo solicito el reembolso si no me gusta?</summary>
+        <p>Dentro de los 7 días posteriores a la compra, solicitas el reembolso directamente en Hotmart, desde el correo de confirmación de compra o en tu área de compras. Te devolvemos el 100% del valor, sin preguntas.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<section class="section dark final">
+  <div class="wrap final-inner">
+    <h2>Esta oferta no volverá a aparecer.</h2>
+    <p class="lead">Informática Avanzada por US$14.90 en lugar de US$37. Más de 250 páginas, 14 capítulos y 6 bonus, con garantía de 7 días.</p>
+    <a href="#oferta" class="btn btn-primary btn-lg">
+      Volver a la oferta
+      <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+    </a>
+    <p class="final-secure"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg> Compra con 1 clic · Hotmart · Garantía de 7 días</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="logo">Iule<span>App</span></span>
+    <p>© 2026 IuleApp. Todos los derechos reservados.<br>
+    Este producto es digital y está protegido por derechos de autor. Prohibida la reproducción o distribución sin autorización previa.</p>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta">
+  <a href="#oferta" class="btn btn-primary btn-block">
+    Ver la oferta — US$14.90
+  </a>
+</div>
+
+<!-- ========== SCRIPTS ========== -->
+<!--- HOTMART - script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+</script>
+<!-- HOTMART - Sales Funnel Widget -->
+
+<script>
+  /* --- Sticky mobile CTA + header border --- */
+  const stickyCta = document.querySelector('.sticky-cta');
+  const heroSec = document.querySelector('.hero');
+  const offerSec = document.querySelector('.offer-sec');
+  const header = document.querySelector('.header');
+  function onScroll() {
+    const pastHero = heroSec.getBoundingClientRect().bottom < 0;
+    const offerBox = offerSec.getBoundingClientRect();
+    const atOffer = offerBox.top < window.innerHeight && offerBox.bottom > 0;
+    stickyCta.classList.toggle('show', pastHero && !atOffer);
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>
